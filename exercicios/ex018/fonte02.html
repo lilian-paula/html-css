@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        /*@font-face - para buscar uma fonte externa*/
+        @font-face {
+            /*Usar o site dafont.com para baixar a fonte e depois extrair*/
+            font-family: 'love';
+            src: url('fonts/love story ttf.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-att (Apple Advanced Typography)
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'love','Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, aspernatur aut. Voluptas tempora dolore tempore exercitationem! Perferendis tempora nemo omnis delectus aliquid? Rem facilis aut officia, est mollitia iste ad.</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'work Sans', Arial, Helvetica, sans-serif;
+            /*Medidas absolutas
+                cm, mm, in(polegada),px, pt, pc(paica).
+
+            Medidas relativas
+                em(tamanho atual da fonte, ex(tamanho da altura x de uma fonte), rem(fonte configurada no body), vw(largura da tela), vh (altura da tela), %.
+                16px geralmente = em
+
+            USAR SOMENTE 'PX' E 'EM', mas é melhor usar o 'EM'*/
+            font-size: 1em;            
+        }
+
+        h1 {
+             /*
+             font-weight: 800; = peso da fonte(tipo negrito): lighter(leve), normal, bold e bolder. Tmb pode ser usado o peso de 100 a 900, como no exemplo.
+             shorthand = colocar várias coisas em uma única linha.
+             shorthand font = font-style -> font-weight -> font-size -> font-family. O código debaixo seria igual ao de cima, mais compacto.
+           
+             font-family: 'work sans';
+             font-weight: bolder;
+             font-size: 3em;
+             font-style: italic;*/
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'work Sans';
+        }
+    </style>
+</head>
+<body>
+    <H1>Trabalhando com fontes</H1>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus, incidunt, maiores exercitationem suscipit ut sit, expedita ea nostrum ipsam est. Dolores quam maxime illum cupiditate vero atque similique recusandae?</P>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, explicabo labore id harum quisquam tempore minus nemo et, quae blanditiis voluptatum beatae esse aliquam? Ullam asperiores non unde dolorem a.</p>
+    <H2>Subtítulo do exercício</H2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, rem similique possimus, tenetur placeat repellat laborum consectetur asperiores sapiente deleniti numquam optio consequatur ea veniam, voluptates magnam. Saepe, distinctio dolorum!</p>
+    
+</body>
+</html>
